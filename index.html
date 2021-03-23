@@ -69,7 +69,22 @@
             display: none;
             overflow: hidden;
             background-color: #f1f1f1;
+
+
+
         }
+
+        a[href="#top"]{
+    padding:10px;
+    position:fixed;
+    top: 90%;
+    right:40px;
+    display:none;
+    font-size: 30px;
+}
+a[href="#top"]:hover{
+    text-decoration:none;
+}
     </style>
 
 
@@ -97,9 +112,9 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-9 d-none d-lg-block">
-                        <a href="#" class="small mr-3"><span class="icon-question-circle-o mr-2"></span> Tens um questão?</a>
+                        <a href="#contacts" class="small mr-3"><span class="icon-question-circle-o mr-2"></span> Tens uma questão?</a>
                         <a href="#" class="small mr-3"><span class="icon-phone2 mr-2"></span> (+258) 84 54 32 511</a>
-                        <a href="#" class="small mr-3"><span class="icon-envelope-o mr-2"></span> info@ombea-mocambique.co.mz</a>
+                        <a href="#" class="small mr-3"><span class="icon-envelope-o mr-2"></span> feedback@ombea.co.mz</a>
                     </div>
                     <!-- <div class="col-lg-3 text-right">
             <a href="login.html" class="small mr-3"><span class="icon-unlock-alt"></span> Log In</a>
@@ -124,30 +139,37 @@
                                 <li class="active">
                                     <a href="#" class="nav-link text-left">Home</a>
                                 </li>
+
+                                <li>
+                                    <a href="#about" class="nav-link text-left">Sobre</a>
+                                </li>
+
                                 <li class="has-children">
                                     <a href="#products" class="nav-link text-left">Produtos</a>
                                     <ul class="dropdown">
-                                        <li><a href="">ExpessPod S Lite</a></li>
-                                        <li><a href="#ExpresspodL">ExpessPod L 4G</a></li>
-                                        <li><a href="">ExpessTab</a></li>
-                                        <li><a href="">Response Pad</a></li>
-                                        <li class=""><a href="#Insight">Insight</a></li>
+                                        <li><a href="#ExpressPod_S_Lite">ExpessPod S Lite</a></li>
+                                        <li><a href="#ExpressPod_L_4G">ExpessPod L 4G</a></li>
+                                        <li><a href="#ExpressTAB">ExpessTAB</a></li>
+                                        <li><a href="#ResponsePad">Response Pad</a></li>
+                                        <!-- <li class=""><a href="#Insight">Insight</a></li> -->
 
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="#about" class="nav-link text-left">Sobre</a>
+                                    <a href="#Insight" class="nav-link text-left">Insight<sup>TM</sup></a>
                                 </li>
-                                <li class="has-children">
+                                <li>
+                                    <a href="#FAQ" class="nav-link text-left">FAQ</a>
+                                </li>
+                                <!-- <li class="has-children">
                                     <a href="#advantages" class="nav-link text-left">Vantagens</a>
                                     <ul class="dropdown">
                                         <li><a href="">Funcionalidades</a></li>
                                         <li><a href="#FAQ">FAQ</a></li>
-                                        <!-- <li><a href="about.html">ExpessTab</a></li>
-					<li><a href="about.html">Response Pad</a></li> -->
+                                       
 
                                     </ul>
-                                </li>
+                                </li> -->
                                 <li>
                                     <a href="#contacts" class="nav-link text-left">Contactos</a>
                                 </li>
@@ -182,16 +204,25 @@
 
         </header>
 
+       
         <section class="features-icons bg-light text-center" id="about">
+            <div class="container" id="advantages" style="background-color: lightgray; padding: 10px;">
+                <h2 class="section-title-underline" style="text-align: center;">
+                    <span>Sobre</span>
+    
+                </h2>
+    
+            </div>
+            <br>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
                             <div class="features-icons-icon d-flex">
-                                <i class="m-auto text-primary"><img src="img/OMBEA_logo_200.png" alt=""></i>
+                                <i class="m-auto text-primary"><a href="https://www.ombea.com" target="_blank"><img src="img/OMBEA_logo_200.png" alt=""></a></i>
                             </div>
                             <br>
-                            <h3>---| OMBEA |---</h3>
+                            <!-- <h3>---| OMBEA |---</h3> -->
 
                             <p class="lead mb-0" style="font-size: 18px;"><strong>Ombea</strong> é lider em serviços de análise de feedback para clientes, trabalhadores ou colaboradoes. As soluluções tecnológicas para colecta e análise de feedback desenvolvidaos pela Ombea incluem terminais(ExpessPod),
                                 uma plataforma de analise e projeção de feedback(OMbea Insight) e um sistema de Gestão de feedback ao vivo (Ombea Response).</p>
@@ -200,10 +231,10 @@
                     <div class="col-lg-6">
                         <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
                             <div class="features-icons-icon d-flex">
-                                <i class="m-auto text-primary"><img src="img/logo-cenfoss-official-250px.png" alt=""></i>
+                                <i class="m-auto text-primary"><a href="https://www.cenfoss.co.mz" target="_blank"><img src="img/logo-cenfoss-official-250px.png" alt=""></a></i>
                             </div>
                             <br>
-                            <h3>---| CENFOSS |---</h3>
+                            <!-- <h3>---| CENFOSS |---</h3> -->
                             <p class="lead mb-0">Estabelecida em 2006 a <strong>CENFOSS</strong> é uma empresa de consultoria e formação na área de tecnologias de Informação e Comunicacão. Visando ampliar os eu raio geografico de acção, estabeleceu uma parceria en regimede
                                 exclusividade com a Ombea para a Africa Autral.</p>
                         </div>
@@ -213,22 +244,150 @@
             </div>
         </section>
 
+<!-- Features -->
+<section class="ourFeatures" id="section-2">
 
+    <div class="container" id="products">
+        <h2 class="section-title-underline mb-5">
+            <span>Produtos</span>
+        </h2>
+
+        <div class="row" style="background-color: mediumaquamarine; padding: 15px; border-radius: 10px;" id="ExpressPod_S_Lite">
+            <div class="col-lg-5 col-md-5">
+
+                <img class="img-iPhone" src="img/express-lite.png" alt="">
+            </div>
+            <div class="col-lg-6 col-md-6 col-md-offset-1">
+                <h2>ExpessPod S Lite</h2>
+                <div class="features">
+                    <!-- Main Points -->
+
+                    <h3>Ombea ExpessPod S Lite</h3>
+                    <!-- Main Title -->
+                    <p>É adequado para experencia 1:1(Um á Um), e podeser colocado numa recepcão, num caixa ou qualquer sitio onde se pretende obter feedback de um serviço, produto ou cliente. </p>
+                    <!-- Main Text -->
+                </div>
+                <!-- End Main Points -->
+
+            </div>
+        </div>
+        <br>
+        <div class="row" style="background-color: lightseagreen;padding: 15px; border-radius: 10px;" id="ExpressPod_L_4G">
+
+            <div class="col-lg-6 col-md-6 col-md-offset-1">
+                <h2>ExpessPod L</h2>
+                <div class="features">
+                    <!-- Main Points -->
+
+                    <h3>Ombea ExpessPod L 4G ou Lite</h3>
+                    <!-- Main Title -->
+                    <p style="color: #fff;">Devido a sua caracteristica pode ser colocado em áreas de passagem de pessoas, por exemplo nas entradas ou saídas dos centros comerciais, balcões de um banco, restaurante, cafés etc. </p>
+                    <!-- Main Text -->
+                </div>
+                <!-- End Main Points -->
+
+            </div>
+            <div class="col-lg-5 col-md-5">
+
+                <img class="img-iPhone" src="img/express-4G.png" alt="">
+            </div>
+        </div>
+        <br>
+
+        <div class="row" style="background-color: mediumaquamarine; padding: 15px; border-radius: 10px;"  id="ExpressTAB">
+            <div class="col-lg-5 col-md-5">
+
+                <img class="img-iPhone" src="img/express-tab.png" alt="">
+            </div>
+            <div class="col-lg-6 col-md-6 col-md-offset-1">
+                <h2>ExpessTab</h2>
+                <div class="features">
+                    <!-- Main Points -->
+
+                    <h3>Ombea ExpessTab</h3>
+                    <!-- Main Title -->
+                    <p>É usado quando se pretende fazer mais de uma questão. É ideal para colecta de feedback de clientes, colaboradoes ou trabalhadores com disponibidade de para responder várias questões.</p>
+                    <!-- Main Text -->
+                </div>
+                <!-- End Main Points -->
+
+            </div>
+        </div>
+        <br>
+        <div class="row" style="background-color: lightseagreen;padding: 15px; border-radius: 10px;" id="ResponsePad">
+
+            <div class="col-lg-6 col-md-6 col-md-offset-1">
+                <h2>RESPONSE PAD</h2>
+                <div class="features">
+                    <!-- Main Points -->
+
+                    <h3>Ombea Response Pad</h3>
+                    <!-- Main Title -->
+                    <p style="color: #fff;">Devido a sua caracteristica pode ser colocado em áreas de passagem de pessoas, por exemplo nas entradas ou saídas dos centros comerciais, balcões de um banco, restaurante, cafés etc. </p>
+                    <!-- Main Text -->
+                </div>
+                <!-- End Main Points -->
+
+            </div>
+            <div class="col-lg-5 col-md-5">
+
+                <img class="img-iPhone" src="img/ombea-responsepad.png" alt="" style="width: 350px; height: 300px;">
+            </div>
+        </div>
+
+
+
+        <div class="row featuresBtm">
+
+            <div class="col-md-6" id="Insight">
+                <hr>
+                <hr>
+                <h2>Ombea INSIGHT<sup>TM</sup></h2>
+
+                <!-- <h3>Plataforma Ombea Insight</h3> -->
+                <p>A plataforma Ombea Insight é uma aplicação web para analise e projecção tendencias com base no feedback colhido pelo ExpessPod. Esta plataforma é rica em varias funcionalidades. Facilmente pode ser consultado o feedback. A plataforma
+                    consegue comparar várias localizaçõe e fazer cruzamento de Informação, ter sugestões sobre onde como melhorar o feedback negativo, d forma precisa e em tempo real.</p>
+                <h3>Alertas por Email</h3>
+                <p>OS alertas podem ser enviados por email, programados por envio automatico de acordocom a estrategia desejada: receber um email sempre no final do dia, um derminado dia de semana ou sempre que tiver feedback negativo.</p>
+
+
+            </div>
+            <!-- <div class="col-md-5 col-md-offset-1">
+                <img src="img/details1-700.png" class="img-btm" alt="" title="">
+            </div> -->
+            <div class="col-lg-6 order-lg-1 text-white showcase-img"><video width="650" height="500" loop controls autoplay muted>
+                <source src="img/OMBEA-AD-interactive-animation.mp4" type="video/mp4">
+              
+                Your browser does not support the video tag.
+                </video></div>
+        </div>
+
+
+    </div>
+    <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+</section>
+
+<!-- /.ourFeatures -->
+<br>
         <!-- extra -->
         <!-- <img src="img/ombea.jpg" alt=""> -->
 
 
 
-        <div class="container" id="advantages" style="background-color: lightgray; padding: 10px;">
+        <div class="container" id="FAQ"style="background-color: lightgray; padding: 10px;">
             <h2 class="section-title-underline">
-                <span>Vantagens</span>
+                <span>FAQ</span>
 
             </h2>
 
         </div>
         <br>
 
-        <!-- Vantagens-->
+  
         <section class="showcase">
 
 
@@ -237,7 +396,7 @@
 
                 <div class="row no-gutters">
 
-                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/details2.jpg');"></div>
+                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/versatilidade.png');"></div>
                     <div class="col-lg-6 order-lg-1 my-auto showcase-text">
                         <h2>Versatilidade</h2>
                         <p class="lead mb-0" style="font-size: 17px;">Os Terminais da <strong>Ombea</strong> adequam-se facilmnete para clientes, colaboradores, eGovernance, desenvolvemento de estratégias, análise e projecção de tendencias, particpantes e conferenias, e muito mais. Os Terminais de
@@ -245,7 +404,7 @@
                     </div>
                 </div>
                 <div class="row no-gutters">
-                    <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/details3.jpg');"></div>
+                    <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/relevancia.png');"></div>
                     <div class="col-lg-6 my-auto showcase-text">
                         <h2>Relevância & Simplicidade</h2>
                         <p class="lead mb-0">Os terminais da Ombea ajudam a colher 30 vezes mais respostasem relação a outros meios convencionais , como pesqiusa por email ou telefone. Ao adicionar os dados do feedback aos seus dados especificos, irá convence-se com facilidade
@@ -263,170 +422,24 @@
         </section>
         <br>
 
-        <!-- <div class="row mb-5 justify-content-center text-center">
-				<div class="col-lg-4 mb-5">
-				  <h2 class="section-title-underline mb-5">
-					<span>Productos</span>
-				  </h2>
-				</div>
-			  </div> -->
-        <!-- Features -->
-        <section class="ourFeatures" id="section-2">
-
-            <div class="container" id="products">
-                <h2 class="section-title-underline mb-5">
-                    <span>Productos</span>
-                </h2>
-
-                <div class="row" style="background-color: mediumaquamarine; padding: 15px;">
-                    <div class="col-lg-5 col-md-5">
-
-                        <img class="img-iPhone" src="img/ombea devices/mega-menu-left.png" alt="">
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-md-offset-1">
-                        <h2>ExpessPod S Lite</h2>
-                        <div class="features">
-                            <!-- Main Points -->
-
-                            <h3>Ombea ExpessPod S Lite</h3>
-                            <!-- Main Title -->
-                            <p>É adequado para experencias 1:1(Um á um), e podeser colocado numa recepcão, num caixa ou qualquer sitio onde se pretende obter feedback de um serviço, producto ou cliente. </p>
-                            <!-- Main Text -->
-                        </div>
-                        <!-- End Main Points -->
-
-                    </div>
-                </div>
-                <br>
-                <div class="row" style="background-color: lightseagreen;padding: 15px;" id="ExpresspodL">
-
-                    <div class="col-lg-6 col-md-6 col-md-offset-1">
-                        <h2>ExpessPod L</h2>
-                        <div class="features">
-                            <!-- Main Points -->
-
-                            <h3>Ombea ExpessPod L 4G ou Lite</h3>
-                            <!-- Main Title -->
-                            <p>Devido a sua caracteristica pode ser colocado em áreas de passagem de pessoas, por exemplo nas entradas ou saídas dos centros comerciais, balcões de um banco, restaurante, cafés etc. </p>
-                            <!-- Main Text -->
-                        </div>
-                        <!-- End Main Points -->
-
-                    </div>
-                    <div class="col-lg-5 col-md-5">
-
-                        <img class="img-iPhone" src="img/ombea devices/mega-menu-left.png" alt="">
-                    </div>
-                </div>
-                <br>
-
-                <div class="row" style="background-color: mediumaquamarine; padding: 15px;">
-                    <div class="col-lg-5 col-md-5">
-
-                        <img class="img-iPhone" src="img/ombea devices/mega-menu-left.png" alt="">
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-md-offset-1">
-                        <h2>ExpessTab</h2>
-                        <div class="features">
-                            <!-- Main Points -->
-
-                            <h3>Ombea ExpessTab</h3>
-                            <!-- Main Title -->
-                            <p>É usado quando se pretende fazer mais de uma questão. É ideal para colecta de feedback de clientes, colaboradoes ou trabalhadores com disponibidade de para responder várias questões.</p>
-                            <!-- Main Text -->
-                        </div>
-                        <!-- End Main Points -->
-
-                    </div>
-                </div>
-                <br>
-                <div class="row" style="background-color: lightseagreen;padding: 15px;">
-
-                    <div class="col-lg-6 col-md-6 col-md-offset-1">
-                        <h2>RESPONSE PAD</h2>
-                        <div class="features">
-                            <!-- Main Points -->
-
-                            <h3>Ombea Response Pad</h3>
-                            <!-- Main Title -->
-                            <p style="color: #fff;">Devido a sua caracteristica pode ser colocado em áreas de passagem de pessoas, por exemplo nas entradas ou saídas dos centros comerciais, balcões de um banco, restaurante, cafés etc. </p>
-                            <!-- Main Text -->
-                        </div>
-                        <!-- End Main Points -->
-
-                    </div>
-                    <div class="col-lg-5 col-md-5">
-
-                        <img class="img-iPhone" src="img/ombea devices/responsetab.png" alt="">
-                    </div>
-                </div>
-
-
-
-                <div class="row featuresBtm">
-
-                    <div class="col-md-6" id="Insight">
-                        <hr>
-                        <hr>
-                        <h2>Ombea INSIGHT</h2>
-
-                        <h3>Plataforma Ombea Insight</h3>
-                        <p>A plataforma Ombea Insight é uma aplicação web para analise e projecção tendencias com base no feedback colhido pelo ExpessPod. Esta plataforma é rica em varias funcionalidades. Facilmente pode ser consultado o feedback. A plataforma
-                            consegue comparar várias localizaçõe e fazer cruzamento de Informação, ter sugestões sobre ondee como melhorar o feedback negativo, d forma precisa e em tempo real.</p>
-                        <h3>Alertas por Email</h3>
-                        <p>OS alertas podem ser enviados por email, programados por envio automatico de acordocom a estrategia desejada: receber um email sempre no final do dia, um derminado dia de semana ou sempre que tiver feedback negativo.</p>
-
-
-                    </div>
-                    <!-- <div class="col-md-5 col-md-offset-1">
-                        <img src="img/details1-700.png" class="img-btm" alt="" title="">
-                    </div> -->
-                    <div class="col-lg-6 order-lg-1 text-white showcase-img"><video width="650" height="500" loop controls autoplay muted>
-                        <source src="img/OMBEA-AD-interactive-animation.mp4" type="video/mp4">
-                      
-                        Your browser does not support the video tag.
-                        </video></div>
-                </div>
-
-
-            </div>
-            <!-- /.row -->
-
-            </div>
-            <!-- /.container -->
-
-        </section>
-
-        <!-- /.ourFeatures -->
-        <br>
-        <div class="container" id="FAQ" style="background-color: lightgray; padding: 10px;">
-            <h2 class="section-title-underline">
-                <span>FAQ</span>
-
-            </h2>
-
-        </div>
+       
         <br>
 
-        <!-- collapseble -->
-        <!-- <button type="button" class="collapsible">Porquê o uso de smiley</button>
-        <div class="content">
-            <p> O Smiley e um simbolo usados em cominicaçoes para transmiitir uma emoção.</p>
-			
-        </div> -->
+       
         <div class="col-lg-8 col-md-8">
             <!-- <p>Smiley</p> -->
-            <button type="button" class="collapsible">Porquê o uso de smiley?</button>
-            <div class="content">
-                <p>O Smiley e um simbolo usados em cominicaçoes para transmiitir uma emoção. As expressões faciais servem para desmostrar uma opinião sobre uma determinada ques questão. Na maioria do feedback o smiley é suficiente para obter um resultado
+            <button type="button" class="collapsible">O que significam os smiley?</button>
+            <div style="padding: 10px;" class="content">
+                <p >O Smiley e um simbolo usados em cominicaçoes para transmiitir uma emoção. As expressões faciais servem para desmostrar uma opinião sobre uma determinada ques questão. Na maioria do feedback o smiley é suficiente para obter um resultado
                     de uma pesquisa.</p>
+                    <p>Sendo necessario outro tipo de resposta, os terminais Ombea são facilmente são convertidos de smiley para múltipla escolha, usando as letras A á E, dereccionando assimo utilizador auma resposta mais concreta.</p>
             </div>
 
             <!-- <p>Collapsible Set:</p> -->
-            <button type="button" class="collapsible">Existe um outro metodo de resposta para os terminais?</button>
+            <!-- <button type="button" class="collapsible">Existe um outro metodo de resposta para os terminais?</button>
             <div class="content">
                 <p>Sendo necessario outro tipo de resposta, os terminais Ombea são facilmente são convertidos de smiley para múltipla escolha, usando as letras A á E, dereccionando assimo utilizador auma resposta mais concreta.</p>
-            </div>
+            </div> -->
         </div>
         <br>
 
@@ -466,36 +479,39 @@
                         <div class="col-md-4">
                             <div>
 
-                                <p><span class="glyphicon glyphicon-home"></span></i> Av. Salvador Allende Nº , nos Excritorios do Tsala WorkSpace</p>
-                                <p><i class="fa fa-paper-plane" aria-hidden="true"></i> ombea@.cenfoss.co.mz</p>
+                                <p><span class="glyphicon glyphicon-home"><img src="img/iconloc.jpg" alt="" style="width: 50px;height: 50px;"></span>TSALA WORKPSACE <br> Av. Salvador Allende Nº </p>
+                                <p><i class="fa fa-paper-plane" aria-hidden="true"><img src="img/conceito-de-envelope-de-e-mail_34259-135.jpg" alt="" style="width: 50px;height: 50px;"></i> feedback@ombea.co.mz</p>
 
-                                <p><i class="fa fa-phone" aria-hidden="true"></i> (+258) 24 0123 456</p>
+                                <p><i class="fa fa-phone" aria-hidden="true"><img src="img/icone-telefone-3d-1.png" alt="" style="width: 50px;height: 50px;"></i> (+258) 24 0123 456</p>
                             </div>
+
+                            <div style="float: left; position: relative; padding: 10px; margin: 15px;" class="mapouter row"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Av.%20Salvador%20Allende,%20Maputo&t=k&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://yggtorrent-fr.com"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">embed google map in html</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
                             <br>
                         </div>
+                        
                         <div class="row">
-                            <div class="col-md-6 form-group">
-                                <label for="fname">First Name</label>
+                            <div class="col-md-12 form-group">
+                                <label for="fname">Nome</label>
                                 <input type="text" id="fname" class="form-control form-control-lg">
                             </div>
-                            <div class="col-md-6 form-group">
+                            <!-- <div class="col-md-6 form-group">
                                 <label for="lname">Last Name</label>
                                 <input type="text" id="lname" class="form-control form-control-lg">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 form-group">
-                                <label for="eaddress">Email Address</label>
-                                <input type="text" id="eaddress" class="form-control form-control-lg">
-                            </div>
-                            <div class="col-md-6 form-group">
-                                <label for="tel">Tel. Number</label>
-                                <input type="text" id="tel" class="form-control form-control-lg">
-                            </div>
+                            </div> -->
                         </div>
                         <div class="row">
                             <div class="col-md-12 form-group">
-                                <label for="message">Message</label>
+                                <label for="eaddress">Email</label>
+                                <input type="text" id="eaddress" class="form-control form-control-lg">
+                            </div>
+                            <!-- <div class="col-md-6 form-group">
+                                <label for="tel">Tel. Number</label>
+                                <input type="text" id="tel" class="form-control form-control-lg">
+                            </div> -->
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 form-group">
+                                <label for="message">Mensagem</label>
                                 <textarea name="" id="message" cols="30" rows="10" class="form-control"></textarea>
                             </div>
                         </div>
@@ -572,7 +588,7 @@
                     </div>
                 </footer>
                 <!-- .site-wrap -->
-
+                <a href="#top" class="glyphicon glyphicon-chevron-up"><img src="img/topo1.png" alt="" style="width: 40px; height: 40px;"></a>
 
                 <!-- loader -->
                 <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#51be78"/></svg></div>
@@ -618,6 +634,22 @@
                             }
                         });
                     }
+
+
+                    $(document).ready(function(){
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+            $('a[href="#top"]').fadeIn();
+        } else {
+            $('a[href="#top"]').fadeOut();
+        }
+    });
+
+    $('a[href="#top"]').click(function(){
+        $('html, body').animate({scrollTop : 0},800);
+        return false;
+    });
+});
                 </script>
 
 </body>
