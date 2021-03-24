@@ -70,9 +70,41 @@
             overflow: hidden;
             background-color: #f1f1f1;
 
+        }
+        
+        .prod_video{
+             width:650px;
+             height:500px;
+        }
+         /* @media (min-width: 280px) and (max-width: 340px) {
+            .prod_video{
+             width:270px;
+             height:180px;
+             position: relative;
+             
+        }  */
 
+        /* @media  (max-width: 470px) {
+            .prod_video{
+             width:350px;
+             height:250px;
+        } */
+         @media (min-width: 320px) and (max-width: 680px) {
+            .prod_video{
+             width:310px;
+             height:250px;
+        }
+        .responsePad{
+            width:280px;
+             height:220px;
 
         }
+
+        #map{
+            width:310px;
+             height:250px;
+        }
+    } 
 
         a[href="#top"]{
     padding:10px;
@@ -85,6 +117,17 @@
 a[href="#top"]:hover{
     text-decoration:none;
 }
+
+#map{
+
+    float: left; position: relative; padding: 10px; margin: 15px;
+}
+
+/* .label-contact{
+
+    position: relative;
+  float:          ;
+} */
     </style>
 
 
@@ -331,7 +374,7 @@ a[href="#top"]:hover{
             </div>
             <div class="col-lg-5 col-md-5">
 
-                <img class="img-iPhone" src="img/ombea-responsepad.png" alt="" style="width: 350px; height: 300px;">
+                <img class="img-iPhone responsePad"  src="img/ombea-responsepad.png" alt="" style="width: 350px; height: 300px; position: relative;">
             </div>
         </div>
 
@@ -355,7 +398,7 @@ a[href="#top"]:hover{
             <!-- <div class="col-md-5 col-md-offset-1">
                 <img src="img/details1-700.png" class="img-btm" alt="" title="">
             </div> -->
-            <div class="col-lg-6 order-lg-1 text-white showcase-img"><video width="650" height="500" loop controls autoplay muted>
+            <div class="col-lg-6 order-lg-1 text-white showcase-img"><video  class="prod_video" width="650" height="500" loop controls autoplay muted>
                 <source src="img/OMBEA-AD-interactive-animation.mp4" type="video/mp4">
               
                 Your browser does not support the video tag.
@@ -412,7 +455,7 @@ a[href="#top"]:hover{
                     </div>
                 </div>
                 <div class="row no-gutters">
-                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/ombea.jpg');"></div>
+                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/seguranca.png');"></div>
                     <div class="col-lg-6 order-lg-1 my-auto showcase-text">
                         <h2>Segurança</h2>
                         <p class="lead mb-0">Os terminais da OMBEA possuem medidas anti adulteração de dados, todo o feedback é filtrado, tornando improvável a manipulação de dados</p>
@@ -484,12 +527,15 @@ a[href="#top"]:hover{
 
                                 <p><i class="fa fa-phone" aria-hidden="true"><img src="img/icone-telefone-3d-1.png" alt="" style="width: 50px;height: 50px;"></i> (+258) 24 0123 456</p>
                             </div>
-
-                            <div style="float: left; position: relative; padding: 10px; margin: 15px;" class="mapouter row"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Av.%20Salvador%20Allende,%20Maputo&t=k&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://yggtorrent-fr.com"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">embed google map in html</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
+                            <div class="container" >
+                                <div class="row">
+                            <div id="map" class="mapouter row"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Av.%20Salvador%20Allende,%20Maputo&t=k&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://yggtorrent-fr.com"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">embed google map in html</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
                             <br>
                         </div>
-                        
-                        <div class="row">
+                            </div></div>
+
+                            <br><br><br><br><br><br><br><br> <br>
+                        <div class="row label-contact">
                             <div class="col-md-12 form-group">
                                 <label for="fname">Nome</label>
                                 <input type="text" id="fname" class="form-control form-control-lg">
@@ -499,7 +545,7 @@ a[href="#top"]:hover{
                                 <input type="text" id="lname" class="form-control form-control-lg">
                             </div> -->
                         </div>
-                        <div class="row">
+                        <div class="row label-contact" >
                             <div class="col-md-12 form-group">
                                 <label for="eaddress">Email</label>
                                 <input type="text" id="eaddress" class="form-control form-control-lg">
@@ -509,7 +555,7 @@ a[href="#top"]:hover{
                                 <input type="text" id="tel" class="form-control form-control-lg">
                             </div> -->
                         </div>
-                        <div class="row">
+                        <div class="row label-contact" >
                             <div class="col-md-12 form-group">
                                 <label for="message">Mensagem</label>
                                 <textarea name="" id="message" cols="30" rows="10" class="form-control"></textarea>
