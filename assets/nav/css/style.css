@@ -502,7 +502,7 @@ h1, h2, h3, h4, h5,
                 padding-left: 60px; }
     .site-mobile-menu .site-nav-wrap[data-class="social"] {
       float: left;
-      width: 100%;
+      width: 90%;
       margin-top: 30px;
       padding-bottom: 5em; }
       .site-mobile-menu .site-nav-wrap[data-class="social"] > li {
